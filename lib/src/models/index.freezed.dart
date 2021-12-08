@@ -54,20 +54,13 @@ mixin _$AppState {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $AppStateCopyWith<AppState> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AppStateCopyWith<AppState> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $AppStateCopyWith<$Res> {
-  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) =
-      _$AppStateCopyWithImpl<$Res>;
-  $Res call(
-      {String inputText,
-      String languageFrom,
-      String languageTo,
-      String translatedText,
-      bool isLoading});
+  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) = _$AppStateCopyWithImpl<$Res>;
+  $Res call({String inputText, String languageFrom, String languageTo, String translatedText, bool isLoading});
 }
 
 /// @nodoc
@@ -113,20 +106,13 @@ class _$AppStateCopyWithImpl<$Res> implements $AppStateCopyWith<$Res> {
 
 /// @nodoc
 abstract class $AppState$CopyWith<$Res> implements $AppStateCopyWith<$Res> {
-  factory $AppState$CopyWith(AppState$ value, $Res Function(AppState$) then) =
-      _$AppState$CopyWithImpl<$Res>;
+  factory $AppState$CopyWith(AppState$ value, $Res Function(AppState$) then) = _$AppState$CopyWithImpl<$Res>;
   @override
-  $Res call(
-      {String inputText,
-      String languageFrom,
-      String languageTo,
-      String translatedText,
-      bool isLoading});
+  $Res call({String inputText, String languageFrom, String languageTo, String translatedText, bool isLoading});
 }
 
 /// @nodoc
-class _$AppState$CopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res>
-    implements $AppState$CopyWith<$Res> {
+class _$AppState$CopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res> implements $AppState$CopyWith<$Res> {
   _$AppState$CopyWithImpl(AppState$ _value, $Res Function(AppState$) _then)
       : super(_value, (v) => _then(v as AppState$));
 
@@ -176,8 +162,7 @@ class _$AppState$ implements AppState$ {
       this.translatedText = '',
       this.isLoading = false});
 
-  factory _$AppState$.fromJson(Map<String, dynamic> json) =>
-      _$$AppState$FromJson(json);
+  factory _$AppState$.fromJson(Map<String, dynamic> json) => _$$AppState$FromJson(json);
 
   @JsonKey(defaultValue: '')
   @override
@@ -206,12 +191,9 @@ class _$AppState$ implements AppState$ {
         (other.runtimeType == runtimeType &&
             other is AppState$ &&
             const DeepCollectionEquality().equals(other.inputText, inputText) &&
-            const DeepCollectionEquality()
-                .equals(other.languageFrom, languageFrom) &&
-            const DeepCollectionEquality()
-                .equals(other.languageTo, languageTo) &&
-            const DeepCollectionEquality()
-                .equals(other.translatedText, translatedText) &&
+            const DeepCollectionEquality().equals(other.languageFrom, languageFrom) &&
+            const DeepCollectionEquality().equals(other.languageTo, languageTo) &&
+            const DeepCollectionEquality().equals(other.translatedText, translatedText) &&
             const DeepCollectionEquality().equals(other.isLoading, isLoading));
   }
 
@@ -226,8 +208,7 @@ class _$AppState$ implements AppState$ {
 
   @JsonKey(ignore: true)
   @override
-  $AppState$CopyWith<AppState$> get copyWith =>
-      _$AppState$CopyWithImpl<AppState$>(this, _$identity);
+  $AppState$CopyWith<AppState$> get copyWith => _$AppState$CopyWithImpl<AppState$>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -237,11 +218,7 @@ class _$AppState$ implements AppState$ {
 
 abstract class AppState$ implements AppState {
   const factory AppState$(
-      {String inputText,
-      String languageFrom,
-      String languageTo,
-      String translatedText,
-      bool isLoading}) = _$AppState$;
+      {String inputText, String languageFrom, String languageTo, String translatedText, bool isLoading}) = _$AppState$;
 
   factory AppState$.fromJson(Map<String, dynamic> json) = _$AppState$.fromJson;
 
@@ -257,8 +234,7 @@ abstract class AppState$ implements AppState {
   bool get isLoading;
   @override
   @JsonKey(ignore: true)
-  $AppState$CopyWith<AppState$> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AppState$CopyWith<AppState$> get copyWith => throw _privateConstructorUsedError;
 }
 
 TranslationResult _$TranslationResultFromJson(Map<String, dynamic> json) {
@@ -269,8 +245,7 @@ TranslationResult _$TranslationResultFromJson(Map<String, dynamic> json) {
 class _$TranslationResultTearOff {
   const _$TranslationResultTearOff();
 
-  TranslationResult$ call(
-      {required String fromLanguage, required String translatedText}) {
+  TranslationResult$ call({required String fromLanguage, required String translatedText}) {
     return TranslationResult$(
       fromLanguage: fromLanguage,
       translatedText: translatedText,
@@ -292,21 +267,18 @@ mixin _$TranslationResult {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TranslationResultCopyWith<TranslationResult> get copyWith =>
-      throw _privateConstructorUsedError;
+  $TranslationResultCopyWith<TranslationResult> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $TranslationResultCopyWith<$Res> {
-  factory $TranslationResultCopyWith(
-          TranslationResult value, $Res Function(TranslationResult) then) =
+  factory $TranslationResultCopyWith(TranslationResult value, $Res Function(TranslationResult) then) =
       _$TranslationResultCopyWithImpl<$Res>;
   $Res call({String fromLanguage, String translatedText});
 }
 
 /// @nodoc
-class _$TranslationResultCopyWithImpl<$Res>
-    implements $TranslationResultCopyWith<$Res> {
+class _$TranslationResultCopyWithImpl<$Res> implements $TranslationResultCopyWith<$Res> {
   _$TranslationResultCopyWithImpl(this._value, this._then);
 
   final TranslationResult _value;
@@ -332,21 +304,17 @@ class _$TranslationResultCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class $TranslationResult$CopyWith<$Res>
-    implements $TranslationResultCopyWith<$Res> {
-  factory $TranslationResult$CopyWith(
-          TranslationResult$ value, $Res Function(TranslationResult$) then) =
+abstract class $TranslationResult$CopyWith<$Res> implements $TranslationResultCopyWith<$Res> {
+  factory $TranslationResult$CopyWith(TranslationResult$ value, $Res Function(TranslationResult$) then) =
       _$TranslationResult$CopyWithImpl<$Res>;
   @override
   $Res call({String fromLanguage, String translatedText});
 }
 
 /// @nodoc
-class _$TranslationResult$CopyWithImpl<$Res>
-    extends _$TranslationResultCopyWithImpl<$Res>
+class _$TranslationResult$CopyWithImpl<$Res> extends _$TranslationResultCopyWithImpl<$Res>
     implements $TranslationResult$CopyWith<$Res> {
-  _$TranslationResult$CopyWithImpl(
-      TranslationResult$ _value, $Res Function(TranslationResult$) _then)
+  _$TranslationResult$CopyWithImpl(TranslationResult$ _value, $Res Function(TranslationResult$) _then)
       : super(_value, (v) => _then(v as TranslationResult$));
 
   @override
@@ -373,11 +341,9 @@ class _$TranslationResult$CopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$TranslationResult$ implements TranslationResult$ {
-  const _$TranslationResult$(
-      {required this.fromLanguage, required this.translatedText});
+  const _$TranslationResult$({required this.fromLanguage, required this.translatedText});
 
-  factory _$TranslationResult$.fromJson(Map<String, dynamic> json) =>
-      _$$TranslationResult$FromJson(json);
+  factory _$TranslationResult$.fromJson(Map<String, dynamic> json) => _$$TranslationResult$FromJson(json);
 
   @override
   final String fromLanguage;
@@ -394,16 +360,12 @@ class _$TranslationResult$ implements TranslationResult$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is TranslationResult$ &&
-            const DeepCollectionEquality()
-                .equals(other.fromLanguage, fromLanguage) &&
-            const DeepCollectionEquality()
-                .equals(other.translatedText, translatedText));
+            const DeepCollectionEquality().equals(other.fromLanguage, fromLanguage) &&
+            const DeepCollectionEquality().equals(other.translatedText, translatedText));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(fromLanguage),
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(fromLanguage),
       const DeepCollectionEquality().hash(translatedText));
 
   @JsonKey(ignore: true)
@@ -418,12 +380,10 @@ class _$TranslationResult$ implements TranslationResult$ {
 }
 
 abstract class TranslationResult$ implements TranslationResult {
-  const factory TranslationResult$(
-      {required String fromLanguage,
-      required String translatedText}) = _$TranslationResult$;
+  const factory TranslationResult$({required String fromLanguage, required String translatedText}) =
+      _$TranslationResult$;
 
-  factory TranslationResult$.fromJson(Map<String, dynamic> json) =
-      _$TranslationResult$.fromJson;
+  factory TranslationResult$.fromJson(Map<String, dynamic> json) = _$TranslationResult$.fromJson;
 
   @override
   String get fromLanguage;
@@ -431,6 +391,5 @@ abstract class TranslationResult$ implements TranslationResult {
   String get translatedText;
   @override
   @JsonKey(ignore: true)
-  $TranslationResult$CopyWith<TranslationResult$> get copyWith =>
-      throw _privateConstructorUsedError;
+  $TranslationResult$CopyWith<TranslationResult$> get copyWith => throw _privateConstructorUsedError;
 }

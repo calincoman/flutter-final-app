@@ -19,9 +19,9 @@ class AppEpics {
   Stream<dynamic> getTranslation(Stream<GetTranslationStart> actions, EpicStore<AppState> store) {
     return actions //
         .flatMap((GetTranslationStart action) => Stream<void>.value(null)
-        .asyncMap((_) => _api.getTranslation(store.state.inputText, store.state.languageTo))
-        .map<Object>((TranslationResult translationResult) => GetTranslation.successful(translationResult))
-        .onErrorReturnWith((Object error, StackTrace stackTrace) => GetTranslation.error(error, stackTrace))
-        .doOnData(action.result));
+            .asyncMap((_) => _api.getTranslation(store.state.inputText, store.state.languageTo))
+            .map<Object>((TranslationResult translationResult) => GetTranslation.successful(translationResult))
+            .onErrorReturnWith((Object error, StackTrace stackTrace) => GetTranslation.error(error, stackTrace))
+            .doOnData(action.result));
   }
 }

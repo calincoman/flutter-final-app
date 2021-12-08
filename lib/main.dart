@@ -11,7 +11,6 @@ import 'package:redux/redux.dart';
 import 'package:redux_epics/redux_epics.dart';
 
 Future<void> main() async {
-
   await dotenv.load(fileName: ".env");
 
   final TranslationApi translationApi = TranslationApi();

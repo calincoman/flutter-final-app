@@ -17,8 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$GetTranslationTearOff {
   const _$GetTranslationTearOff();
 
-  GetTranslationStart call(
-      String inputText, String languageTo, void Function(dynamic) result) {
+  GetTranslationStart call(String inputText, String languageTo, void Function(dynamic) result) {
     return GetTranslationStart(
       inputText,
       languageTo,
@@ -47,27 +46,21 @@ const $GetTranslation = _$GetTranslationTearOff();
 mixin _$GetTranslation {
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result) $default, {
     required TResult Function(TranslationResult translationResult) successful,
     required TResult Function(Object error, StackTrace stackTrace) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)?
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result)? $default, {
     TResult Function(TranslationResult translationResult)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)?
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result)? $default, {
     TResult Function(TranslationResult translationResult)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
     required TResult orElse(),
@@ -99,14 +92,12 @@ mixin _$GetTranslation {
 
 /// @nodoc
 abstract class $GetTranslationCopyWith<$Res> {
-  factory $GetTranslationCopyWith(
-          GetTranslation value, $Res Function(GetTranslation) then) =
+  factory $GetTranslationCopyWith(GetTranslation value, $Res Function(GetTranslation) then) =
       _$GetTranslationCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$GetTranslationCopyWithImpl<$Res>
-    implements $GetTranslationCopyWith<$Res> {
+class _$GetTranslationCopyWithImpl<$Res> implements $GetTranslationCopyWith<$Res> {
   _$GetTranslationCopyWithImpl(this._value, this._then);
 
   final GetTranslation _value;
@@ -116,19 +107,15 @@ class _$GetTranslationCopyWithImpl<$Res>
 
 /// @nodoc
 abstract class $GetTranslationStartCopyWith<$Res> {
-  factory $GetTranslationStartCopyWith(
-          GetTranslationStart value, $Res Function(GetTranslationStart) then) =
+  factory $GetTranslationStartCopyWith(GetTranslationStart value, $Res Function(GetTranslationStart) then) =
       _$GetTranslationStartCopyWithImpl<$Res>;
-  $Res call(
-      {String inputText, String languageTo, void Function(dynamic) result});
+  $Res call({String inputText, String languageTo, void Function(dynamic) result});
 }
 
 /// @nodoc
-class _$GetTranslationStartCopyWithImpl<$Res>
-    extends _$GetTranslationCopyWithImpl<$Res>
+class _$GetTranslationStartCopyWithImpl<$Res> extends _$GetTranslationCopyWithImpl<$Res>
     implements $GetTranslationStartCopyWith<$Res> {
-  _$GetTranslationStartCopyWithImpl(
-      GetTranslationStart _value, $Res Function(GetTranslationStart) _then)
+  _$GetTranslationStartCopyWithImpl(GetTranslationStart _value, $Res Function(GetTranslationStart) _then)
       : super(_value, (v) => _then(v as GetTranslationStart));
 
   @override
@@ -180,17 +167,13 @@ class _$GetTranslationStart implements GetTranslationStart {
         (other.runtimeType == runtimeType &&
             other is GetTranslationStart &&
             const DeepCollectionEquality().equals(other.inputText, inputText) &&
-            const DeepCollectionEquality()
-                .equals(other.languageTo, languageTo) &&
+            const DeepCollectionEquality().equals(other.languageTo, languageTo) &&
             (identical(other.result, result) || other.result == result));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(inputText),
-      const DeepCollectionEquality().hash(languageTo),
-      result);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(inputText),
+      const DeepCollectionEquality().hash(languageTo), result);
 
   @JsonKey(ignore: true)
   @override
@@ -200,9 +183,7 @@ class _$GetTranslationStart implements GetTranslationStart {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result) $default, {
     required TResult Function(TranslationResult translationResult) successful,
     required TResult Function(Object error, StackTrace stackTrace) error,
   }) {
@@ -212,9 +193,7 @@ class _$GetTranslationStart implements GetTranslationStart {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)?
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result)? $default, {
     TResult Function(TranslationResult translationResult)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
   }) {
@@ -224,9 +203,7 @@ class _$GetTranslationStart implements GetTranslationStart {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)?
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result)? $default, {
     TResult Function(TranslationResult translationResult)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
     required TResult orElse(),
@@ -273,22 +250,20 @@ class _$GetTranslationStart implements GetTranslationStart {
 }
 
 abstract class GetTranslationStart implements GetTranslation {
-  const factory GetTranslationStart(
-          String inputText, String languageTo, void Function(dynamic) result) =
+  const factory GetTranslationStart(String inputText, String languageTo, void Function(dynamic) result) =
       _$GetTranslationStart;
 
   String get inputText;
   String get languageTo;
   void Function(dynamic) get result;
   @JsonKey(ignore: true)
-  $GetTranslationStartCopyWith<GetTranslationStart> get copyWith =>
-      throw _privateConstructorUsedError;
+  $GetTranslationStartCopyWith<GetTranslationStart> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $GetTranslationSuccessfulCopyWith<$Res> {
-  factory $GetTranslationSuccessfulCopyWith(GetTranslationSuccessful value,
-          $Res Function(GetTranslationSuccessful) then) =
+  factory $GetTranslationSuccessfulCopyWith(
+          GetTranslationSuccessful value, $Res Function(GetTranslationSuccessful) then) =
       _$GetTranslationSuccessfulCopyWithImpl<$Res>;
   $Res call({TranslationResult translationResult});
 
@@ -296,16 +271,13 @@ abstract class $GetTranslationSuccessfulCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GetTranslationSuccessfulCopyWithImpl<$Res>
-    extends _$GetTranslationCopyWithImpl<$Res>
+class _$GetTranslationSuccessfulCopyWithImpl<$Res> extends _$GetTranslationCopyWithImpl<$Res>
     implements $GetTranslationSuccessfulCopyWith<$Res> {
-  _$GetTranslationSuccessfulCopyWithImpl(GetTranslationSuccessful _value,
-      $Res Function(GetTranslationSuccessful) _then)
+  _$GetTranslationSuccessfulCopyWithImpl(GetTranslationSuccessful _value, $Res Function(GetTranslationSuccessful) _then)
       : super(_value, (v) => _then(v as GetTranslationSuccessful));
 
   @override
-  GetTranslationSuccessful get _value =>
-      super._value as GetTranslationSuccessful;
+  GetTranslationSuccessful get _value => super._value as GetTranslationSuccessful;
 
   @override
   $Res call({
@@ -345,26 +317,21 @@ class _$GetTranslationSuccessful implements GetTranslationSuccessful {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is GetTranslationSuccessful &&
-            const DeepCollectionEquality()
-                .equals(other.translationResult, translationResult));
+            const DeepCollectionEquality().equals(other.translationResult, translationResult));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(translationResult));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(translationResult));
 
   @JsonKey(ignore: true)
   @override
   $GetTranslationSuccessfulCopyWith<GetTranslationSuccessful> get copyWith =>
-      _$GetTranslationSuccessfulCopyWithImpl<GetTranslationSuccessful>(
-          this, _$identity);
+      _$GetTranslationSuccessfulCopyWithImpl<GetTranslationSuccessful>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result) $default, {
     required TResult Function(TranslationResult translationResult) successful,
     required TResult Function(Object error, StackTrace stackTrace) error,
   }) {
@@ -374,9 +341,7 @@ class _$GetTranslationSuccessful implements GetTranslationSuccessful {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)?
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result)? $default, {
     TResult Function(TranslationResult translationResult)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
   }) {
@@ -386,9 +351,7 @@ class _$GetTranslationSuccessful implements GetTranslationSuccessful {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)?
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result)? $default, {
     TResult Function(TranslationResult translationResult)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
     required TResult orElse(),
@@ -435,29 +398,24 @@ class _$GetTranslationSuccessful implements GetTranslationSuccessful {
 }
 
 abstract class GetTranslationSuccessful implements GetTranslation {
-  const factory GetTranslationSuccessful(TranslationResult translationResult) =
-      _$GetTranslationSuccessful;
+  const factory GetTranslationSuccessful(TranslationResult translationResult) = _$GetTranslationSuccessful;
 
   TranslationResult get translationResult;
   @JsonKey(ignore: true)
-  $GetTranslationSuccessfulCopyWith<GetTranslationSuccessful> get copyWith =>
-      throw _privateConstructorUsedError;
+  $GetTranslationSuccessfulCopyWith<GetTranslationSuccessful> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $GetTranslationErrorCopyWith<$Res> {
-  factory $GetTranslationErrorCopyWith(
-          GetTranslationError value, $Res Function(GetTranslationError) then) =
+  factory $GetTranslationErrorCopyWith(GetTranslationError value, $Res Function(GetTranslationError) then) =
       _$GetTranslationErrorCopyWithImpl<$Res>;
   $Res call({Object error, StackTrace stackTrace});
 }
 
 /// @nodoc
-class _$GetTranslationErrorCopyWithImpl<$Res>
-    extends _$GetTranslationCopyWithImpl<$Res>
+class _$GetTranslationErrorCopyWithImpl<$Res> extends _$GetTranslationCopyWithImpl<$Res>
     implements $GetTranslationErrorCopyWith<$Res> {
-  _$GetTranslationErrorCopyWithImpl(
-      GetTranslationError _value, $Res Function(GetTranslationError) _then)
+  _$GetTranslationErrorCopyWithImpl(GetTranslationError _value, $Res Function(GetTranslationError) _then)
       : super(_value, (v) => _then(v as GetTranslationError));
 
   @override
@@ -502,15 +460,12 @@ class _$GetTranslationError implements GetTranslationError {
         (other.runtimeType == runtimeType &&
             other is GetTranslationError &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            const DeepCollectionEquality()
-                .equals(other.stackTrace, stackTrace));
+            const DeepCollectionEquality().equals(other.stackTrace, stackTrace));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(error),
-      const DeepCollectionEquality().hash(stackTrace));
+      runtimeType, const DeepCollectionEquality().hash(error), const DeepCollectionEquality().hash(stackTrace));
 
   @JsonKey(ignore: true)
   @override
@@ -520,9 +475,7 @@ class _$GetTranslationError implements GetTranslationError {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result) $default, {
     required TResult Function(TranslationResult translationResult) successful,
     required TResult Function(Object error, StackTrace stackTrace) error,
   }) {
@@ -532,9 +485,7 @@ class _$GetTranslationError implements GetTranslationError {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)?
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result)? $default, {
     TResult Function(TranslationResult translationResult)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
   }) {
@@ -544,9 +495,7 @@ class _$GetTranslationError implements GetTranslationError {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String inputText, String languageTo, void Function(dynamic) result)?
-        $default, {
+    TResult Function(String inputText, String languageTo, void Function(dynamic) result)? $default, {
     TResult Function(TranslationResult translationResult)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
     required TResult orElse(),
@@ -593,12 +542,10 @@ class _$GetTranslationError implements GetTranslationError {
 }
 
 abstract class GetTranslationError implements GetTranslation {
-  const factory GetTranslationError(Object error, StackTrace stackTrace) =
-      _$GetTranslationError;
+  const factory GetTranslationError(Object error, StackTrace stackTrace) = _$GetTranslationError;
 
   Object get error;
   StackTrace get stackTrace;
   @JsonKey(ignore: true)
-  $GetTranslationErrorCopyWith<GetTranslationError> get copyWith =>
-      throw _privateConstructorUsedError;
+  $GetTranslationErrorCopyWith<GetTranslationError> get copyWith => throw _privateConstructorUsedError;
 }

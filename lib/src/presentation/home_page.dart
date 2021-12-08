@@ -15,7 +15,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   final TextEditingController textFieldController = TextEditingController();
   FocusNode focusNode = FocusNode();
   bool wasPressed = false;
@@ -25,7 +24,6 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-
   }
 
   void _onPress(String text, String toLanguage) {
@@ -128,13 +126,13 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
                 ElevatedButton(
-                    onPressed: () {
-                      _onPress(textFieldController.text, languageCodes[languageTo]!);
-                      setState(() {
-                        wasPressed = true;
-                      });
-                    },
-                    child: const Text('Translate'),
+                  onPressed: () {
+                    _onPress(textFieldController.text, languageCodes[languageTo]!);
+                    setState(() {
+                      wasPressed = true;
+                    });
+                  },
+                  child: const Text('Translate'),
                 ),
                 if (wasPressed)
                   Column(

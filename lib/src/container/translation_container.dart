@@ -13,10 +13,7 @@ class TranslationContainer extends StatelessWidget {
     return StoreConnector<AppState, TranslationResult>(
       converter: (Store<AppState> store) {
         TranslationResult translationResult =
-            TranslationResult(
-                fromLanguage: store.state.languageFrom,
-                translatedText: store.state.translatedText
-            );
+            TranslationResult(fromLanguage: store.state.languageFrom, translatedText: store.state.translatedText);
         return translationResult;
       },
       builder: builder,

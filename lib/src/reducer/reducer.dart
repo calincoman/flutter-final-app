@@ -10,9 +10,9 @@ Reducer<AppState> reducer = combineReducers<AppState>(<Reducer<AppState>>[
 
 AppState _getTranslation(AppState state, GetTranslationStart action) {
   return state.copyWith(
-      isLoading: true,
-      languageTo: action.languageTo,
-      inputText: action.inputText,
+    isLoading: true,
+    languageTo: action.languageTo,
+    inputText: action.inputText,
   );
 }
 
