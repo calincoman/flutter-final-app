@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart';
 
 import '../models/index.dart';
@@ -51,7 +52,7 @@ class TranslationApi {
 
     final Response response = await get(uriTranslate, headers: <String, String>{
       'x-rapidapi-host': 'nlp-translation.p.rapidapi.com',
-      'x-rapidapi-key': 'ebbfc5cf2amsh6ab6663e8ef8cbcp19c7f1jsn1fce50ba27eb'
+      'x-rapidapi-key': dotenv.env['API_KEY']!,
     });
 
     if (response.statusCode != 200) {
